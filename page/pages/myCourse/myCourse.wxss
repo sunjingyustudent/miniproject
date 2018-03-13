@@ -1,0 +1,93 @@
+
+.course {
+	margin: 0 0 20rpx;
+	background-color: #fff;
+}
+.course:last-child {
+	margin: 0;
+}
+.course > .item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+    -webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+    /*-webkit-justify-content: space-between;
+    justify-content: space-between;*/
+	padding: 24rpx 0;
+	margin: 0 30rpx;
+	border-bottom: #d7d7d7 solid 1px;
+}
+.course > .item:last-child {
+	border: none;
+}
+.course > .item .figure {
+	margin: 0 20rpx 0 0;
+	width: 120rpx;
+	height: 120rpx;
+}
+.info {
+	position: relative;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+.title-bar {
+	height: 72rpx;
+	overflow: hidden;
+	line-height: 36rpx;
+	font-size: 26rpx;
+}
+.title-bar > text {
+	color: #212121;
+}
+.lecturer, .time-bar {
+	margin: 10rpx 0 0;
+}
+.lecturer {
+	height: 34rpx;
+	line-height: 34rpx;
+	font-size: 24rpx;
+}
+.lecturer > text {
+	color: #323232;
+}
+.time-bar, .time-bar > view {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+    -webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 28rpx;
+	line-height: 28rpx;
+	font-size: 20rpx;
+}
+.time-bar > view {
+	margin: 0 30rpx 0 0;
+}
+.time-bar > view:last-child {
+	margin: 0;
+}
+.time-bar text {
+	color: #818181;
+}
+.icon-time, .icon-popularity {
+	margin: 0 12rpx 0 0;
+	width: 24rpx;
+	height: 24rpx;
+}
+.subscribe {
+	position: absolute;
+	bottom: 30rpx;
+	right: 10rpx;
+	width: 80rpx;
+	height: 36rpx;
+	line-height: 36rpx;
+	text-align: center;
+	border: 1px solid #ff4646;
+	border-radius: 4rpx;
+	font-size: 20rpx;
+	color: #ff4646;
+}

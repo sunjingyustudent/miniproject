@@ -1,0 +1,64 @@
+.students-list {
+	background-color: #fff;
+}
+.title-bar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+	padding: 34rpx 30rpx;
+	height: 32rpx;
+	text-align: center;
+	border-bottom: #e5e5e5 solid 1rpx;
+}
+.title-bar > .item {
+	width: 33.33%;
+	text-align: left;
+	font-size: 32rpx;
+	color: #353232;
+}
+.class-list {
+	margin: 0 30rpx;
+}
+.class-list .item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100rpx;
+	border-bottom: #e5e5e5 solid 1rpx;
+}
+.nick,
+.count,
+.time {
+	width: 33.33%;
+	height: 28rpx;
+	line-height: 28rpx;
+	font-size: 28rpx;
+	color: #8e8e8e;
+}
+.time {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	width: 33.33%;
+}
+.icon-extend {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	width: 20rpx;
+	height: 20rpx;
+}

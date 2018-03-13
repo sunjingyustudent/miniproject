@@ -1,0 +1,20 @@
+<import src="../../component/noData/noData.wxml"/>
+
+<template is="noData" data="{{hasData}}"/>
+<view class="my-students" wx:if="{{hasData}}">
+    <view class="students-list">
+        <view class="title-bar">
+            <view class="item">学生姓名</view>
+            <view class="item">陪练次数</view>
+            <view class="item">最近陪练</view>
+        </view>
+        <view class="class-list">
+            <!-- data-id保存学生id,用于向后续页面传递数据 -->
+            <view class="item" wx:for="{{classInfo}}" wx:key="record_id" bindtap="showStudentDetail" data-id="{{item.student_id}}">
+                <view class="nick">{{item.nick}}</view>
+                <view class="count">{{item.counts}}次</view>
+                <view class="time">{{item.time_class}}<image class="icon-extend" src="{{extendIcon}}" mode="aspectFit" /></view>
+            </view>
+        </view>
+    </view>
+</view>

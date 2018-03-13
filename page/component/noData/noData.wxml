@@ -1,0 +1,6 @@
+<template name="noData">
+	<view class="no-data" wx:if="{{!hasData}}">
+		<image class="figure" mode="widthFix" src="http://test001.pnlyy.com/linewechatclass/ee2607912ab68e586c1739400210c57b" />
+		<view class="text">暂无数据</view>
+	</view>
+</template>

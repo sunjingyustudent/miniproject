@@ -1,0 +1,52 @@
+<view class="liveshow">
+	<!-- 直播详情板块 -->
+	<view wx:if="{{showFlag}}" class="liveshow-info">
+		<view class="liveshow-banner">
+			<image class="liveshow-banner-img" src="{{classBanner}}" mode="widthFix" />
+		</view>
+		<view class="class-title">
+			{{classTitle}}
+		</view>
+		<view class="class-info" bindtap="interRenqi">
+			<text class="info-text">{{classTime}}</text>
+			<image class="info-num-icon" src="http://test001.pnlyy.com/linewechatclass/0516b37f9601882c989c446431b18933"/>
+			<text class="info-num-text">{{peopleNum}}人</text>
+			
+			<image class="head-icon"  src="http://test001.pnlyy.com/linewechatclass/5895a806b927923199e025fbd26261e4" wx:for-items="{{HeadList}}" wx:key="{{item.head}}"/>
+
+			<image class="extend-icon" src="../../../../image/icon/extend.png"/>
+		</view>
+		<view class="class-content">
+			<image class="class-content-img" src="{{classContent}}" mode="widthFix"/>
+		</view>
+		<view class="class-footer">
+			<view class="class-footer-button" bindtap="bookClass" wx:if="{{bookClassbutton == 0}}">
+				立即预约直播课程
+			</view>
+			<view class="class-footer-button" wx:else="{{bookClassbutton == 1}}" bindtap="interClass">
+				进入课程
+				<view wx:if="interClassFlag">
+					<!-- <web-view src="https://www.baidu.com/">
+					</web-view> -->
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 课程下架 -->
+	<view wx:else="{{!showFlag}}" class="class-down">
+		<image class="class-down-icon" src="http://test001.pnlyy.com/linewechatclass/5895a806b927923199e025fbd26261e4"/>
+		<view class="class-down-tip">当前课程已下架</view>
+		<view class="go-recently">去近期直播</view>
+	</view>
+	<!-- 提示预约遮罩层 -->
+	<view class="bookCover" wx:if="{{bookCoverFlag}}" bindtap="downbook">
+		<view class="bookCover-bg">
+		</view>
+		<image class="bookCover-img" src="http://test001.pnlyy.com/linewechatclass/34e1068d9fb5a030b1d9a9d106cb5f41"/>
+	</view>
+	<!-- 课程跳转模块 -->
+	<view class="interclassPage" wx:if="{{interclassPage}}">
+		<text class="interclassPage-text">火速赶往听课中</text>
+		<image class="interclassPage-img" src="http://test001.pnlyy.com/linewechatclass/aa978fedb114ef7dc239953ffd35a630"/>
+	</view>
+</view>

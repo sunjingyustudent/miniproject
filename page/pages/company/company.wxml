@@ -1,0 +1,8 @@
+<view class="company">
+    <!-- 公司介绍 -->
+    <image class="head-title" src="{{headImage}}" mode="aspectFit" />
+    <image class="info" src="{{infoImage}}" mode="aspectFit" />
+    <image class="assessment" src="{{assessmentImage}}" mode="aspectFit" />
+    <image class="adviser" src="{{adviserImage}}" mode="aspectFit" />
+    <image class="about-us" src="{{aboutUsImage}}" mode="aspectFit" />
+</view>

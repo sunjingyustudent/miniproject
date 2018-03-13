@@ -1,0 +1,59 @@
+<view class="index">
+	<view class="menu">
+		<navigator class="item" url="../recently/recently">
+			近期直播
+		</navigator>
+		<navigator class="item" url="../liveback/liveback">
+			课程回顾
+		</navigator>
+		<navigator class="item" url="../myCourse/myCourse">
+			我的课程
+		</navigator>
+		<navigator class="item" url="../myStudents/myStudents">
+			学生陪练单
+		</navigator>
+		<navigator class="item" url="../myReward/myReward">
+			我的奖励
+		</navigator>
+		<navigator class="item" url="../aboutUs/aboutUs">
+			关于我们
+		</navigator>
+		<navigator class="item" url="../livePractice/livePractice">
+			在线陪练情况
+		</navigator>
+		<navigator class="item" url="../parentTalk/parentTalk">
+			家长有话说
+		</navigator>
+		<navigator class="item" url="../extension/extension">
+			推广计划
+		</navigator>
+		<navigator class="item" url="../company/company">
+			公司介绍
+		</navigator>
+		<navigator class="item" url="../activity/activity">
+			月月奖不停
+		</navigator>
+	</view>
+	<!--<view class="footer-nav">
+		<view class="nav-item">
+			<navigator url="../studentDetail/studentDetail">
+				我学生的陪练情况
+			</navigator>
+		</view>
+		<view class="nav-item">
+			<navigator url="../liveback/liveback">
+				课程回顾
+			</navigator>
+		</view>
+		<view class="nav-item">
+			<navigator url="../popShare/popShare">
+				人气分享榜
+			</navigator>
+		</view>
+		<view class="nav-item">
+			<navigator url="../myStudents/myStudents">
+				我推荐的学员
+			</navigator>
+		</view>
+	</view>-->
+</view>

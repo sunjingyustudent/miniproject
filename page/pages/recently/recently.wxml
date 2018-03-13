@@ -1,0 +1,23 @@
+<import src="../../component/noData/noData.wxml"/>
+
+<template is="noData" data="{{hasData}}"/>
+<view class="recently" wx:if="{{hasData}}">
+    <!-- 近期直播列表 -->
+    <!-- data-id保存课程id,用于向后续页面传递数据 -->
+    <view class="item" wx:for="{{recentlyItems}}" wx:key="id" bindtap="showDetail" data-id="{{item.id}}" >
+        <image class="figure" src="{{item.banner_img}}" mode="widthFix" />
+        <view class="info">
+            <view class="title-bar"><text class="title">{{item.title}}</text></view>
+            <view class="subscribe-bar">
+                <view class="popularity-bar">
+                    <image class="icon-popularity" src="{{personIcon}}" mode="scaleToFill" />
+                    <text class="counts">{{item.counts}}人</text>
+                </view>
+                <text class="subscribe-btn actived" wx:if="{{item.isbook}}">已预约</text>
+                <text class="subscribe-btn" wx:elif="{{!item.isbook}}">立即预约</text>
+            </view>
+        </view>
+    </view>
+
+
+</view>

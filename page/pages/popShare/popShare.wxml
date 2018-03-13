@@ -1,0 +1,22 @@
+<import src="../../component/noData/noData.wxml"/>
+
+<template is="noData" data="{{hasData}}"/>
+<view class="pop-share" wx:if="{{hasData}}">
+    <view class="share-head">
+        <image class="icon-fire" src="{{fireIcon}}" />
+        <view class="head-text">{{count}}人气</view>
+    </view>
+    <!-- 人气分享榜 -->
+    <view class="share-list" wx:if="{{shareInfo.length}}">
+        <view class="item" wx:for="{{shareInfo}}" wx:key="id">
+            <view class="lf">
+                <image class="head-figure" src="{{item.head}}" mode="widthFix" />
+                <view class="name">{{item.wechat_name}}</view>
+            </view>
+            <view class="rt">
+                <view class="time">{{item.share_time}}</view>
+                <view class="other">订阅了课程</view>
+            </view>
+        </view>
+    </view>
+</view>

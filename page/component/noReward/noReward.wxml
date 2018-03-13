@@ -1,0 +1,9 @@
+<template name="noReward">
+	<view class="no-reward" wx:if="{{!hasData}}">
+		<image class="title" src="http://test001.pnlyy.com/linewechatclass/5e81493a65b48417942cabc070793e57" mode="aspectFit" />
+		<navigator url="../../pages/aboutUs/aboutUs" hover-class="navigator-hover"><image class="info1" src="http://test001.pnlyy.com/linewechatclass/b1a03122083ddcf3ef1ab47a4c870831" mode="aspectFit" bindtap="gotoAboutUs"/></navigator>
+
+		<navigator url="../../pages/extension/extension" hover-class="navigator-hover"><image class="info2" src="http://test001.pnlyy.com/linewechatclass/f2648c7c37feb1676c13652ae013bfd5" mode="aspectFit" /></navigator>
+		<image class="qrcode" src="{{qrcodeImage}}" mode="widthFix" />
+	</view>
+</template>

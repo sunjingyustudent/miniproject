@@ -1,0 +1,8 @@
+<view class="about-us">
+    <!-- 关于我们 -->
+    <image class="head-title" src="{{headImage}}" mode="aspectFit" />
+    <image class="info" src="{{infoImage}}" mode="aspectFit" />
+    <image class="artist" src="{{artistImage}}" mode="aspectFit" />
+    <image class="service" src="{{serviceImage}}" mode="aspectFit" />
+    <image class="qrcode" src="{{qrcodeImage}}" mode="widthFix" />
+</view>

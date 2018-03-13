@@ -1,0 +1,8 @@
+<view class="extension">
+    <!-- 推广计划 -->
+    <image class="head-title" src="{{headImage}}" mode="aspectFit" />
+    <image class="banner" src="{{bannerImage}}" mode="aspectFit" />
+    <image class="ext-1" src="{{ext1Image}}" mode="aspectFit" />
+    <image class="ext-2" src="{{ext2Image}}" mode="aspectFit" />
+    <image class="ext-3" src="{{ext3Image}}" mode="aspectFit" />
+</view>

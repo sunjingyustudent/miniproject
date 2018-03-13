@@ -1,0 +1,47 @@
+<scroll-view class="activity" scroll-y>
+    <!-- 广告一 -->
+    <view class="activity-item" >
+        <image class="activity-banner" src="{{activeBanner[0]}}" mode="aspectFit" />
+        <view class="activity-content">
+            <view class="title">每月分享微课邀请{{teacherTask.task_num}}位新用户关注</view>
+            <view class="progress">当前进度<text>{{teacherTask.current_num}}</text>/{{teacherTask.task_num}}</view>
+            <view class="money" wx:if="{{teacherTaskStatus !== 2}}">抽取最高<text>{{teacherTask.task_money}}</text>元奖励</view>
+            <view class="money" wx:else>已领取<text>{{teacherTask.task_money}}</text>红包</view>
+            <button class="activity-btn" bindtap="todoTeacherTask" wx:if="{{teacherTaskStatus < 2}}">{{teacherTaskStatus === 1 ? '领红包' : '去完成'}}</button>
+            <view class="activity-btn completed" wx:else></view>
+        </view>
+    </view>
+    <!-- 广告二 -->
+    <view class="activity-item">
+        <image class="activity-banner" src="{{activeBanner[1]}}" mode="aspectFit" />
+        <view class="activity-content">
+            <view class="title">每月邀请{{exclassTask.task_num}}位琴童参与VIP陪练</view>
+            <view class="progress">当前进度<text>{{exclassTask.current_num}}</text>/{{exclassTask.task_num}}</view>
+            <view class="money" wx:if="{{exclassTaskStatus !== 2}}">抽取最高<text>{{exclassTask.task_money}}</text>元奖励</view>
+            <view class="money" wx:else>已领取<text>{{exclassTask.task_money}}</text>红包</view>
+            <button class="activity-btn" bindtap="todoExclassTask" wx:if="{{exclassTaskStatus < 2}}">{{exclassTaskStatus === 1 ? '领红包' : '去完成'}}</button>
+            <view class="activity-btn completed" wx:else></view>
+        </view>
+    </view>
+    <!-- 活动说明 -->
+    <view class="activity-intro">
+        <view class="title">活动说明</view>
+        <view class="cont">微课拉新奖 <text>每位用户报名并分享微课，带来8位新关注老师可以参与红包抽奖一次， 最高领取58元奖励</text></view>
+        <view class="cont">体验达人奖 <text>每月每位用户推荐3位琴童完成VIP陪练体验课可以参与红包抽奖一次， 最高领取188元奖励</text></view>
+        <button class="activity-btn" bindtap="switchMonthActivity">{{activityBtnText}}</button>
+    </view>
+    <!-- 领取红包 -->
+    <view class="activity-reward {{isOpenReward && 'award-animation'}}" wx:if="{{isOpenReward}}">
+        <view class="box">
+            <view class="seal"></view>
+            <view class="button"></view>
+            <view class="reward" wx:if="{{money}}">
+                <view class="money"><text>{{money}}</text>元</view>
+                奖励已发送到您的账户
+            </view>
+        </view>
+        <view class="close-btn" bindtap="closeReward">
+            <view class="icon-cancel"></view>
+        </view>
+    </view>
+</scroll-view>

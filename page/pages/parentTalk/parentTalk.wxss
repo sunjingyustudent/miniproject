@@ -1,0 +1,47 @@
+image {
+	display: block;
+}
+.parent-talk {
+	background: #fff;
+}
+.head-title {
+	width: 750rpx;
+	height: 100rpx;
+}
+.info {
+	width: 750rpx;
+	height: 400rpx;
+}
+.parent-view {
+	width: 750rpx;
+	height: 650rpx;
+}
+.parent-view image,
+.parent-view video {
+	width: 100%;
+	height: 100%;
+}
+.parent-talk-1 {
+	width: 750rpx;
+	height: 1000rpx;
+}
+.parent-talk-2 {
+	width: 750rpx;
+	height: 960rpx;
+}
+.parent-talk-3 {
+	width: 750rpx;
+	height: 1260rpx;
+}
+.match {
+	width: 750rpx;
+	height: 2120rpx;
+}
+.approval {
+	width: 750rpx;
+	height: 2528rpx;
+}
+.about-us {
+	width: 750rpx;
+	height: 368rpx;
+}

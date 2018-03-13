@@ -1,0 +1,26 @@
+image {
+	display: block;
+}
+.extension {
+	background: #fff;
+}
+.head-title {
+	width: 750rpx;
+	height: 100rpx;
+}
+.banner {
+	width: 750rpx;
+	height: 340rpx;
+}
+.ext-1 {
+	width: 750rpx;
+	height: 400rpx;
+}
+.ext-2 {
+	width: 750rpx;
+	height: 750rpx;
+}
+.ext-3 {
+	width: 750rpx;
+	height: 446rpx;
+}

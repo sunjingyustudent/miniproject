@@ -1,0 +1,74 @@
+.share-head {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+    -webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+    justify-content: center;
+	height: 70rpx;
+	background-color: #fff;
+	border-bottom: #e5e5e5 solid 1rpx;
+}
+.share-head > .icon-fire {
+	margin: 0 20rpx 0 0;
+	width: 26rpx;
+	height: 26rpx;
+}
+.share-head > .head-text {
+	line-height: 28rpx;
+	font-size: 28rpx;
+	color: #5f5c5c;
+}
+.share-list {
+	padding: 0 30rpx;
+	background-color: #fff;
+}
+.share-list > .item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+    -webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+	height: 100rpx;
+	border-bottom: #e5e5e5 solid 1rpx;
+}
+.share-list > .item .lf,
+.share-list > .item .rt {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+    -webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.share-list .head-figure {
+	margin: 0 20rpx 0 0;
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 100%;
+}
+.share-list .name {
+	width: 304rpx;
+	height: 28rpx;
+	line-height: 28rpx;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 28rpx;
+	color: #5f5c5c;
+}
+.share-list .time, .share-list .other {
+	height: 24rpx;
+	line-height: 24rpx;
+	font-size: 24rpx;
+	color: #8e8e8e;
+}
+.share-list .time {
+	margin: 0 22rpx 0 0;
+	width: 100rpx;
+}

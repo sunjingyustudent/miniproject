@@ -1,0 +1,15 @@
+<view class="parent-talk">
+    <!-- 家长有话说 -->
+    <image class="head-title" src="{{headImage}}" mode="aspectFit" />
+    <image class="info" src="{{infoImage}}" mode="aspectFit" />
+    <view class="parent-view">
+        <image class="parent-image" src="{{parentImage}}" mode="aspectFit" bindtap="videoShow" wx:if="{{!videoStatus}}" />
+        <video src="{{parentVideo}}" autoplay="true" controls wx:if="{{videoStatus}}" ></video>
+    </view>
+    <image class="parent-talk-1" src="{{pt1Image}}" mode="aspectFit" />
+    <image class="parent-talk-2" src="{{pt2Image}}" mode="aspectFit" />
+    <image class="parent-talk-3" src="{{pt3Image}}" mode="aspectFit" />
+    <image class="match" src="{{matchImage}}" mode="aspectFit" />
+    <image class="approval" src="{{approvalImage}}" mode="aspectFit" />
+    <image class="about-us" src="{{aboutUsImage}}" mode="aspectFit" />
+</view>

@@ -1,0 +1,11 @@
+<view class="sharepage">
+	<image class="sharepage-bg" src="{{poster}}" mode="widthFix"/>
+	<image class="sharepage-head" src="{{head}}"/>
+	<view class="user-name">
+		{{name}}
+	</view>
+	<view class="user-tip">
+		向您推荐了很棒的在线课程
+	</view>
+	<image class="sharepage-code" src="{{qrcode}}"/>
+</view>

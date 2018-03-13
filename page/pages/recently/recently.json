@@ -1,0 +1,7 @@
+{
+  	"navigationBarTitleText": "最近直播",
+  	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "dark",
+	"enablePullDownRefresh": true,
+	"disableScroll": false
+}

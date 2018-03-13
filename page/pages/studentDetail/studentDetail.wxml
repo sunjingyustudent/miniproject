@@ -1,0 +1,52 @@
+<import src="../../component/noData/noData.wxml"/>
+
+<template is="noData" data="{{hasData}}"/>
+<view class="student-detail" wx:if="{{hasData}}">
+    <!-- 学生信息 -->
+    <view class="student-hd">
+        <image class="head" src="{{head}}" />
+        <view class="info">
+            <view class="item">
+                <image class="icon-name" src="{{studentIcon}}" mode="widthFix" />
+                <view>学生姓名<text>{{name}}</text></view>
+            </view>
+            <view class="item">
+                <image class="icon-wx" src="{{wxIcon}}" mode="widthFix" />
+                <view>微信名称<text>{{nick}}</text></view>
+            </view>
+        </view>
+    </view>
+    <!-- 陪练课单 -->
+    <view class="student-bd">
+        <view class="title-bar">
+            <view class="item">陪练课后单</view>
+            <view class="item">已完成<text>{{classInfo.length}}</text>节</view>
+        </view>
+        <view class="class-list">
+            <view class="item" wx:for="{{classInfo}}" wx:key="record_id">
+                <view class="lf">{{item.time_class}}</view>
+                <view class="rt">{{item.name}}<image class="icon-extend" src="{{extendIcon}}" mode="aspectFit" /></view>
+            </view>
+        </view>
+    </view>
+    <!-- 反馈 -->
+    <view class="feedback">
+        <button class="feedback-btn" bindtap="feedbackShow">填写学生情况反馈</button>
+    </view>
+    <!-- 反馈表单 -->
+    <view class="popup {{popupActived ? 'entered' : 'exited'}}" hidden="{{popupActived ? false : true}}">
+        <view class="mask" bindtap="feedbackHide"></view>
+        <view class="feedback-form">
+            <view class="hd">
+                <view class="icon-head"></view>
+                <view class="title">填写反馈</view>
+            </view>
+            <view class="bd">
+                <form bindsubmit="formSubmit">
+                    <textarea class="content" placeholder="请描述具体问题" maxlength="-1" auto-focus="{{focusStatus}}" name="feedback" cursor-spacing="100" value="{{feedbackData}}"></textarea>
+                    <button class="submit-btn" form-type="submit">提交</button>
+                </form>
+            </view>
+        </view>
+    </view>
+</view>

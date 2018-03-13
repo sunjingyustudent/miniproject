@@ -1,0 +1,26 @@
+.no-data {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+.no-data .figure {
+    position: absolute;
+    top: 440rpx;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400rpx!important;
+    height: 232rpx!important;
+    background: #fff!important;
+}
+.no-data .text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 440rpx;
+    text-align: center;
+    font-size: 32rpx;
+    line-height: 32rpx;
+    color: #5f5c5c;
+}

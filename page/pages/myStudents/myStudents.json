@@ -1,0 +1,7 @@
+{
+  	"navigationBarTitleText": "我推荐的学员",
+  	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "dark",
+	"enablePullDownRefresh": true,
+	"disableScroll": false
+}

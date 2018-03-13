@@ -1,0 +1,7 @@
+{
+  	"navigationBarTitleText": "家长有话说",
+  	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "dark",
+	"enablePullDownRefresh": true,
+	"disableScroll": false
+}

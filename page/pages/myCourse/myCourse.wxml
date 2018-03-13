@@ -1,0 +1,52 @@
+<import src="../../component/noData/noData.wxml"/>
+
+<template is="noData" data="{{hasData}}"/>
+<view class="my-course" wx:if="{{hasData}}">
+    <!-- 最近课程 -->
+    <view class="course recently-course" wx:if="{{recentlyCourse.length}}">
+        <!-- data-id保存课程id,用于向后续页面传递数据 -->
+        <view class="item" wx:for="{{recentlyCourse}}" wx:key="id" data-id="{{item.id}}" bindtap="showDetail">
+            <image class="figure" src="{{item.icon}}" mode="widthFix" />
+            <view class="info">
+                <view class="title-bar"><text class="title">{{item.title}}</text></view>
+                <view class="lecturer">
+                    <text class="counts">主讲人：{{item.teacher_name}}</text>
+                </view>
+                <view class="time-bar">
+                    <view class="time">
+                        <image class="icon-time" src="{{timeIcon}}" mode="widthFix" />
+                        <text>{{item.class_time}}</text>
+                    </view>
+                    <view class="counts">
+                        <image class="icon-popularity" src="{{personIcon}}" mode="scaleToFill" />
+                        <text>{{item.counts}}人</text>
+                    </view>
+                </view>
+                <view class="subscribe">已预约</view>
+            </view>
+        </view>
+    </view>
+    <!-- 往期课程 -->
+    <view class="course back-course" wx:if="{{backCourse.length}}">
+        <!-- data-id保存课程id,用于向后续页面传递数据 -->
+        <view class="item" wx:for="{{backCourse}}" wx:key="id" data-id="{{item.id}}" bindtap="showDetail">
+            <image class="figure" src="{{item.icon}}" mode="widthFix" />
+            <view class="info">
+                <view class="title-bar"><text class="title">{{item.title}}</text></view>
+                <view class="lecturer">
+                    <text>主讲人：{{item.teacher_name}}</text>
+                </view>
+                <view class="time-bar">
+                    <view class="time">
+                        <image class="icon-time" src="{{timeIcon}}" mode="widthFix" />
+                        <text>{{item.class_time}}</text>
+                    </view>
+                    <view class="counts">
+                        <image class="icon-popularity" src="{{personIcon}}" mode="scaleToFill" />
+                        <text>{{item.counts}}人</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

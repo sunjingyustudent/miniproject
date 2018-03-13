@@ -1,0 +1,34 @@
+<import src="../../component/noReward/noReward.wxml"/>
+
+<template is="noReward" data="{{hasData, qrcodeImage}}"/>
+<view class="my-reward" wx:if="{{hasData}}">
+    <!-- 提现信息 -->
+    <view class="income-head">
+        <view class="drew-income">
+            <view class="hd">
+                <image class="drew-income-icon" src="{{drewIncomeIcon}}" />
+                <text>可提现金额</text>
+            </view>
+            <view class="bd">{{drewIncome}}</view>
+            <view class="ft">立即提现</view>
+        </view>
+        <view class="store-income">
+            <view class="hd">
+                <image class="store-income-icon" src="{{storeIncomeIcon}}" />
+                <text>累计提现金额</text>
+            </view>
+            <view class="bd">{{storeIncome}}</view>
+        </view>
+    </view>
+    <!-- 收益明细 -->
+    <view class="income-details">
+        <view class="title">收益明细</view>
+        <view class="income-list">
+            <view class="item" wx:for="{{incomeList}}" wx:key="id">
+                <view class="name">{{item.studentName}}</view>
+                <view class="comment">{{item.comment}}</view>
+                <view class="money">{{item.money}}</view>
+            </view>
+        </view>
+    </view>
+</view>

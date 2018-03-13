@@ -1,0 +1,25 @@
+.no-reward {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+.no-reward image {
+    display: block;
+}
+.no-reward .title {
+    width: 750rpx;
+    height: 110rpx;
+}
+.no-reward .info1 {
+    width: 750rpx;
+    height: 324rpx;
+}
+.no-reward .info2 {
+    width: 750rpx;
+    height: 336rpx;
+}
+.no-reward .qrcode {
+    width: 750rpx;
+    height: 240rpx;
+}

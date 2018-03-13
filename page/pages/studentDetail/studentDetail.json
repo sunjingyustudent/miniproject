@@ -1,0 +1,7 @@
+{
+  	"navigationBarTitleText": "我学生的陪练情况",
+  	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "dark",
+	"enablePullDownRefresh": true,
+	"disableScroll": false
+}

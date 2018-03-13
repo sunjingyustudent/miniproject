@@ -1,0 +1,31 @@
+<import src="../../component/toast/toast.wxml"/>
+<import src="../../component/noData/noData.wxml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<view class="liveback">
+	<!-- 课程分类 -->
+	<scroll-view scroll-x="true" class="menu-scroll">
+		<view class="menu-item" wx:for-items="{{livebackNav}}" wx:key="{{item.id}}" bindtap="classSort" data-id="{{item.id}}">
+			<view class="menu-item-a {{item.id == 1 ? 'select-nav' : ''}}">
+				{{item.author_name}}
+			</view>
+		</view>
+	</scroll-view>
+	<!-- 课程回顾列表 -->
+	<scroll-view scroll-y="true" class="liveback-scroll" bindscroll="scroll" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" wx:if="{{hasData}}">
+		<view class="back-item" wx:for-items="{{LiveBackList}}"  wx:key="{{item.id}}" bindtap="interClass" data-id="{{item.id}}" data-page="{{item.page}}">
+			<image class="back-item-icon" src="{{item.icon}}"/>
+			<view class="back-item-info">
+				<view class="back-info-title">
+					{{item.title}}
+				</view>
+				<view class="back-item-time">
+					<image class="back-item-time-icon" src="http://test001.pnlyy.com/linewechatclass/4274028b45af2da86c71efa79979833b"/>
+					<text class="back-item-time-text">{{item.class_time}}</text>
+					<image class="back-item-time-icon" src="http://test001.pnlyy.com/linewechatclass/86918bdf6f2e633444bdad0882ee1337"/>
+					<text class="back-item-time-text">{{item.counts}}人</text>
+				</view>
+			</view>
+		</view>	
+	</scroll-view>
+	<template is="noData" data="{{hasData}}"/>
+</view>

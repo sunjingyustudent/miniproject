@@ -1,0 +1,255 @@
+.activity {
+	height: 100vh;
+}
+.activity image {
+	display: block;
+}
+.activity button {
+	margin: 0;
+	padding: 0;
+}
+.activity-item,
+.activity-intro {
+	margin: 12rpx;
+	border-radius: 8rpx;
+}
+.activity-banner {
+	width: 726rpx;
+	height: 280rpx;
+}
+.activity-content {
+	position: relative;
+	padding: 20rpx;
+	height: 140rpx;
+	background: #fff;
+}
+.activity-content .title {
+	height: 28rpx;
+	line-height: 28rpx;
+	font-size: 28rpx;
+	color: #555;
+}
+.activity-content .progress,
+.activity-content .money {
+	margin: 20rpx 0 0;
+	line-height: 28rpx;
+	font-size: 24rpx;
+	color: #a0a0a0;
+}
+.activity-content .progress text {
+	margin: 0 0 0 8rpx;
+	color: #FF4646;
+}
+.activity-content .money text {
+	margin: 0 8rpx;
+	font-size: 36rpx;
+	color: #FF4646;
+}
+.activity-btn {
+	position: absolute;
+	right: 18rpx;
+	bottom: 28rpx;
+	width: 140rpx;
+	height: 52rpx;
+	line-height: 52rpx;
+	border-color: #FF4646;
+	background-color: #FF4646;
+	font-size: 24rpx;
+	color: #fff;
+}
+.activity-btn.completed {
+	width: 100rpx;
+	height: 100rpx;
+	background: url('http://test001.pnlyy.com/linewechatclass/067a513fb128986a5e9383a19c50d7e1') no-repeat;
+	background-size: cover;
+}
+.activity-intro {
+	position: relative;
+	padding: 20rpx;
+	height: 300rpx;
+	background: #fff;
+}
+.activity-intro .title {
+	line-height: 28rpx;
+	font-size: 28rpx;
+	color: #555;
+}
+.activity-intro .cont {
+	margin: 20rpx 0 0;
+	line-height: 36rpx;
+	font-size: 24rpx;
+	color: #555;
+}
+.activity-intro .cont text {
+	margin: 0 0 0 6rpx;
+	color: #a0a0a0;
+}
+
+.activity-reward {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0, .2);
+}
+.activity-reward .box {
+	position: absolute;
+	top: 76rpx;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	width: 600rpx;
+	height: 800rpx;
+	background: #D14C49 url('http://test001.pnlyy.com/linewechatclass/433715e8666852c4abc9ea0c3c44af93') center bottom no-repeat;
+	background-size: 100% auto;
+	border-radius: 8rpx;
+}
+.activity-reward .seal {
+	position: relative;
+	width: 100%;
+	height: 400rpx;
+	overflow: hidden;
+}
+.activity-reward .seal:before {
+	position: absolute;
+	top: -450rpx;
+	left: -100rpx;
+	right: 0;
+	content: '';
+	margin: 0 auto;
+	width: 800rpx;
+	height: 800rpx;
+	background: #E45C5C;
+	border-radius: 100%;
+	box-shadow: 1rpx 3rpx rgba(0,0,0,.1);
+}
+.activity-reward .button {
+	position: absolute;
+	top: 320rpx;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100rpx;
+	height: 100rpx;
+	background: url('http://test001.pnlyy.com/linewechatclass/85b9022e988cf21817a22d42f9af241a') center no-repeat;
+	background-size: cover;
+}
+.activity-reward .reward {
+	position: absolute;
+	top: 320rpx;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+	font-size: 30rpx;
+	color: #E45C5C;
+	opacity: 0;
+}
+.activity-reward .money text {
+	line-height: 120rpx;
+	font-size: 80rpx;
+	letter-spacing: 4rpx;
+}
+.close-btn {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 120rpx;
+	z-index: 1001;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+    -webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+    justify-content: center;
+	margin: 0 auto;
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 100%;
+	border: #fff solid 3.5rpx;
+	background: rgba(255,255,255,.4);
+}
+.icon-cancel {
+	display: inline-block;
+	width: 50rpx;
+	height: 4rpx;
+	background: #fff;
+	line-height: 0;
+	font-size:0;
+	vertical-align: middle;
+	-webkit-transform: rotate(45deg);
+}
+.icon-cancel:after{
+	content:'/';
+	display:block;
+	width: 50rpx;
+	height: 4rpx;
+	background: #fff;
+	-webkit-transform: rotate(-90deg);
+}
+
+.award-animation .box {
+	animation: boxOpen 1.5s forwards;
+	-webkit-animation: boxOpen 1.5s forwards; /* Safari and Chrome */
+}
+@keyframes boxOpen {
+	0% {
+		transform:scale(.6);
+	}
+	20% {
+		transform:scale(1.1);
+		background-color: #D14C49;
+	}
+	30% {
+		transform:scale(1);
+	}
+	100%{
+		background-color: #fff;
+	}
+}
+.award-animation .seal:before {
+	animation: sealOpen .8s .5s forwards;
+	-webkit-animation: sealOpen .8s .5s forwards; /* Safari and Chrome */
+}
+@keyframes sealOpen {
+	0% {
+		top: -450rpx;
+	}
+	100%{
+		top: -550rpx;
+	}
+}
+.award-animation .button {
+	animation: buttonOpen .8s .5s forwards;
+	-webkit-animation: buttonOpen .8s .5s forwards; /* Safari and Chrome */
+}
+@keyframes buttonOpen {
+	0% {
+		top: 320rpx;
+		opacity: 1;
+	}
+	100%{
+		top: 220rpx;
+		opacity: 0;
+	}
+}
+.award-animation .reward {
+	animation: rewardOpen .5s .8s forwards;
+	-webkit-animation: rewardOpen .5s .8s forwards; /* Safari and Chrome */
+}
+@keyframes rewardOpen {
+	0% {
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}

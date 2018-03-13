@@ -1,0 +1,7 @@
+{
+  	"navigationBarTitleText": "人气分享榜",
+  	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "dark",
+	"enablePullDownRefresh": true,
+	"disableScroll": false
+}
